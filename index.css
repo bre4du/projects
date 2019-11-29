@@ -1,0 +1,113 @@
+::selection{
+    background-color: rgba(255, 182, 193, 0.25);
+}
+
+html, body, div, h1, h2, p, span{
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2';
+  cursor: default;
+  color: #F0F0F0;
+  text-shadow: 0 1px #111;
+}
+
+body{
+  background: #333;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-weight: 600;
+}
+
+h2{
+  font-weight: 500;
+}
+
+.wrapper{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.avatar img{
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+h1{
+  font-size: 3vw;
+  margin: 5vh 0;
+}
+
+.gallery{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item{
+  width: 324px;
+  height: 200px;
+  margin: auto;
+  border: 1px solid #F0F0F0;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column-reverse wrap;
+  cursor: pointer;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+
+.item:hover{
+  border: 1px solid rgba(255, 182, 193, 1);
+}
+
+#item-mnml{
+  background: url('mnml.png') no-repeat;
+}
+
+#item-astria{
+  background: url('astria.png') no-repeat;
+}
+
+.item-inner{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+}
+
+.item h2{
+  font-size: 1.25vw;
+  cursor: pointer;
+}
+
+.item p{
+  font-size: 0.9vw;
+  font-weight: 200;
+  cursor: pointer;
+}
