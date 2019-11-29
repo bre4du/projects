@@ -27,6 +27,14 @@ h2{
   font-weight: 500;
 }
 
+img{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 .wrapper{
   width: 50vw;
   height: 100vh;
@@ -53,7 +61,7 @@ h2{
 }
 
 h1{
-  font-size: 3vw;
+  font-size: 32px;
   margin: 5vh 0;
 }
 
@@ -102,12 +110,12 @@ h1{
 }
 
 .item h2{
-  font-size: 1.25vw;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .item p{
-  font-size: 0.9vw;
+  font-size: 13px;
   font-weight: 200;
   cursor: pointer;
 }
