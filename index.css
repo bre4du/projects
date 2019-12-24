@@ -67,17 +67,16 @@ h1{
 
 .gallery{
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  flex-flow: column wrap;
   width: 100%;
 }
 
 .item{
   width: 324px;
   height: 200px;
-  margin: auto;
-  border: 1px solid #F0F0F0;
+  margin-bottom: 5vh;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
@@ -90,7 +89,7 @@ h1{
 }
 
 .item:hover{
-  border: 1px solid rgba(255, 182, 193, 1);
+  border: 1px solid #F0F0F0;
 }
 
 #item-mnml{
