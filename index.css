@@ -100,6 +100,10 @@ h1{
   background: url('astria.png') no-repeat;
 }
 
+#item-vjastronomy{
+  background: url('vjastronomy.png') no-repeat;
+}
+
 .item-inner{
   display: flex;
   flex-flow: column wrap;
