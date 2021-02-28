@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   background-color: white;
   font-family: 'Karla', sans-serif;
@@ -22,11 +23,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  background-color: #eef7ff;
+  background-color: #deefff;
 }
 
 ::-moz-selection {
-  background-color: #eef7ff;
+  background-color: #deefff;
 }
 
 img {
@@ -39,6 +40,7 @@ img {
 /*--------------------------------------------------------------
 # Back-to-top button
 --------------------------------------------------------------*/
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -69,6 +71,7 @@ img {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
   position: fixed;
   top: 0;
@@ -116,6 +119,7 @@ img {
 /*--------------------------------------------------------------
 # Mobile AOS animation delay disabler
 --------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -125,6 +129,7 @@ img {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   position: fixed;
   top: 0;
@@ -154,14 +159,16 @@ img {
 /*--------------------------------------------------------------
 # Navigation menu
 --------------------------------------------------------------*/
+
 /* Desktop Navigation */
+
 .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
 }
@@ -203,25 +210,26 @@ img {
   }
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
   color: #fff;
   background: #0563bb;
 }
 
-.nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
+.nav-menu a:hover span, .nav-menu .active>a span, .nav-menu li:hover>a span {
   color: #fff;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu li:hover>a {
   width: 100%;
   color: #fff;
 }
 
-.nav-menu a:hover span, .nav-menu li:hover > a span {
+.nav-menu a:hover span, .nav-menu li:hover>a span {
   display: block;
 }
 
 /* Mobile navigation */
+
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -256,6 +264,7 @@ img {
 /*--------------------------------------------------------------
 # Hero section
 --------------------------------------------------------------*/
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -343,6 +352,7 @@ img {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -394,6 +404,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
@@ -422,6 +433,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
   user-select: none;
@@ -469,16 +481,17 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: '';
-  background: rgba(245, 245, 245, 0.75);
+  background: rgba(255, 255, 255, 1);
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
+  left: 50px;
+  right: 50px;
+  top: 50px;
+  bottom: 50px;
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -492,15 +505,19 @@ section {
   z-index: 3;
   transition: all ease-in-out 0.3s;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  line-height: 1;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 13px;
   color: #45505b;
   font-weight: 600;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -518,10 +535,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #45505b;
-  margin: 0 2px;
+  margin: 0;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+  margin-top: 2px;
+  padding-top: 3px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -553,6 +572,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -564,7 +584,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #eef7ff;
+  background: #deefff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -596,6 +616,7 @@ section {
   color: #fff;
 }
 
+/*
 .contact .php-email-form {
   width: 100%;
   background: #fff;
@@ -622,7 +643,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -681,6 +702,7 @@ section {
 .contact .php-email-form button[type='submit']:hover {
   background: #0678e3;
 }
+*/
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -703,6 +725,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio details
 --------------------------------------------------------------*/
+
 .portfolio-details {
   padding: 40px 0;
 }
@@ -747,7 +770,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -765,6 +788,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer {
   background: #f7f8f9;
   color: #45505b;
