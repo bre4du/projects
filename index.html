@@ -4,37 +4,33 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
+  <link rel="manifest" href="https://gregorylimeurhen.github.io/projects/site.webmanifest" />
 
   <title>Gregory Lim</title>
 
-  <!-- Google Fonts -->
+  <!-- STYLES: VENDOR -->
   <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Karla:400,500,700,800&display=swap" rel="stylesheet" />
-
-  <!-- Vendor -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="vendor/icofont/icofont.min.css" rel="stylesheet" />
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
   <link href="vendor/venobox/venobox.css" rel="stylesheet" />
   <link href="vendor/aos/aos.css" rel="stylesheet" />
 
-  <!-- Non-Vendor -->
+  <!-- STYLES: NON-VENDOR -->
   <link href="css/main.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- ======= Mobile Navigation Toggle Button ======= -->
+  <!-- MOBILE: NAVIGATION TOGGLE BUTTON -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
-  <!-- ======= Header ======= -->
+  <!-- HEADER -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav class="nav-menu">
@@ -46,9 +42,10 @@
       </ul>
     </nav>
 
-  </header><!-- End Header -->
+  </header>
+  <!-- /HEADER -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- HERO -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Hello, I'm Gregory</h1>
@@ -62,11 +59,13 @@
         <!--<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+  <!-- /HERO -->
 
+  <!-- MAIN -->
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- ABOUT -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -86,9 +85,10 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- /ABOUT -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- PORTFOLIO -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -100,7 +100,7 @@
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-frontend">Pure HTML/CSS/JS</li>
+              <li data-filter=".filter-frontend">Pure Front-End</li>
               <li data-filter=".filter-angular">Angular</li>
               <li data-filter=".filter-react">React</li>
             </ul>
@@ -165,12 +165,41 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio-zenspot-small.png" class="img-fluid" alt="Artwork for ZenSpot">
+              <div class="portfolio-info">
+                <h4>ZenSpot</h4>
+                <div class="portfolio-links">
+                  <!--<a href="img/portfolio-calculatte-large.png" data-gall="portfolioGallery" class="venobox" title="CalcuLatte"><i class="bx bx-plus"></i></a>
+                  <a href="#" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Details"><i class="bx bx-link"></i></a>-->
+                  <a href="https://zenspot.github.io/" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+            <div class="portfolio-wrap">
+              <img src="img/portfolio-idleworld-small.png" class="img-fluid" alt="Artwork for IdleWorld">
+              <div class="portfolio-info">
+                <h4>IdleWorld</h4>
+                <div class="portfolio-links">
+                  <!--<a href="img/portfolio-calculatte-large.png" data-gall="portfolioGallery" class="venobox" title="CalcuLatte"><i class="bx bx-plus"></i></a>
+                  <a href="#" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Details"><i class="bx bx-link"></i></a>-->
+                  <a href="https://gregorylimeurhen.github.io/idleworld/" target="_blank"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- /PORTFOLIO -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- CONTACT -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -194,38 +223,46 @@
             <div class="email">
               <i class="icofont-meetme"></i>
               <h4>In person</h4>
-              <p>I love meeting people in real life. If you fancy meeting up to chat, I'll buy you a coffee, no questions asked.<br/>I'm generally available most weekday evenings after 8pm.<br/>Drop me an e-mail and include <strong>[coffee]</strong> in the subject line, and we can work something out.</p>
+              <p>I love meeting people in real life — if you fancy meeting up, I'll buy you a coffee, no questions asked.<br/>Drop me an e-mail and include <strong>[coffee]</strong> in the subject line, and we can work something out.</p>
             </div>
           </div>
           <!--</div>-->
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- /CONTACT -->
 
-  </main><!-- End <main> -->
+  </main>
+  <!-- /MAIN -->
 
-  <!-- ======= Footer ======= -->
+  <!-- FOOTER -->
   <footer id="footer">
     <div class="container">
+      <!--
       <div class="social-links">
-        <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://facebook.com/profile.php?id=100009917130113" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
         <a href="https://github.com/gregorylimeurhen" class="github" target="_blank"><i class="bx bxl-github"></i></a>
         <a href="https://instagram.com/grr.egory" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-        <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
-        <!--<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
+      -->
       <div class="credits">
-        Coded with ❤️ by Gregory Lim © 2020. All rights reserved.
+        Made with ❤️ by Gregory Lim © 2021.
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- /FOOTER -->
 
+  <!-- BACK TO TOP BUTTON -->
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- PRELOADER -->
   <div id="preloader"></div>
 
-  <!-- Vendor -->
+  <!-- SCRIPTS: VENDOR -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -236,7 +273,7 @@
   <script src="vendor/typedjs/typed.min.js"></script>
   <script src="vendor/aos/aos.js"></script>
 
-  <!-- Non-Vendor -->
+  <!-- SCRIPTS: NON-VENDOR -->
   <script src="js/main.js"></script>
 
 </body>
