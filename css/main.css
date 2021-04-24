@@ -465,7 +465,7 @@ section:last-child {
   z-index: 2;
   opacity: 0;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--light-grey);
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
